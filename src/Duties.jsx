@@ -3,9 +3,16 @@ import { FaAngleDoubleRight } from 'react-icons/fa'
 
 const Duties = ({duties }) => {
 
-  console.log(duties[1]);
+  // console.log(duties[0]);
   return (
-    <div>Duties</div>
+    <div>
+      {duties.map((duty, index) => {
+        return <div key={index} className='job-desc'> 
+          <FaAngleDoubleRight className='job' />
+          <p>{duty}</p>
+        </div>
+      })}
+    </div>
   )
 }
 
