@@ -1,8 +1,14 @@
 import React from 'react'
 
-const Jobinfo = () => {
+const Jobinfo = ({jobs}) => {
+
+  const {company, dates, duties, title} = jobs[0];
+
   return (
-    <div>Jobinfo</div>
+    <article>
+      <h1>{company}</h1>
+    </article>
+    
   )
 }
 
